@@ -161,6 +161,7 @@ body{
         background-color: rgb(25, 163, 69);
         max-height: 90vh;
         background-color: white;
+        overflow: scroll;
     }
 
     #form{
