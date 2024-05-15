@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+<section class="sides" id ="side1">
+
+</section>
+
+<section class="first-page ">
+
+  <div id="form">
+  <h1>Stay updated!</h1>
+
+  <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+  <li>Product discovery and building what matters</li>
+  <li>Measuring to ensure updates are a success</li>
+  <li>And much more!</li>
+  <br>
+  <br>
+  
+  <label for ="email">Email address </label>
+  <span class="email-required hidden">Email required</span>
+  <br>
+  <input type="text" id="email" name="email" placeholder="email@company.com"></input>
+  <br>
+  <button type="button" id="subscribe" class="button">Subscribe to monthly newsletter</button>
+  
+  </div>
+  <!-- Sign-up form end -->
+  <div id="image">
+    <img src="./illustration-sign-up-desktop.svg" alt="window chart" class="image">
+  </div>
+
+</section>
+  <!-- Success message start -->
+<section class="thanks hidden">
+  <div id="width">
+  <img src="./icon-success.svg">
+ <h1>Thanks for subscribing!</h1>
+
+  <p>A confirmation email has been sent to <strong><scan id="your-email">ash@loremcompany.com</scan></strong>. 
+  Please open it and click the button inside to confirm your subscription.</p>
+
+  <button type="button" class="button">Dismiss message</button>
+</div>
+</section>
+<section class="sides" id ="side2"> 
+
+</section>
+  <!-- Success message end -->
+  
+<script src="./index.js"></script>
+</body>
+</html>

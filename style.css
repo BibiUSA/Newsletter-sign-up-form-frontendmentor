@@ -1,0 +1,194 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(./fonts/Roboto-Regular.ttf);
+    font-family: "Roboto-Bold";
+    src:url(./fonts/Roboto-Bold.ttf);
+}
+
+
+body{
+    background-color:hsl(235, 18%, 26%);
+    overflow: hidden;
+   margin: 0; /*how i made equal spacing on the top and bottom*/
+    display: flex; /*how i made equal spacing on the top and bottom*/
+    justify-content: space-between; /*how i made equal spacing on the top and bottom*/
+    align-items: center; /*how i made equal spacing on the top and bottom*/
+    height: 100vh; /*how i made equal spacing on the top and bottom*/
+    font-family: Roboto-Regular;
+    
+}
+
+.first-page{
+    background: white;
+    display: flex;
+    padding:2%;
+    border-radius: 4%;
+    max-height: 90vh; /*made sure it always fit in the screen when minimized with height*/
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden; /*to avoid image going out of the box when minimizing*/
+    
+    
+    
+}
+
+
+#form{
+    margin-right: 3%;
+    margin-left: 1%;
+    min-width: 50%;
+    max-width: 50%;
+    
+    margin-bottom: 5%;
+
+   
+}
+
+#form h1{
+    font-size: 3.5rem;
+    font-family: Roboto-Bold;
+    margin-bottom: 0;
+}
+#form p{
+    width:90%;
+}
+#form li{
+    list-style-image: url("./icon-list.svg");
+    margin: 2% auto;
+}
+
+#form label{
+    font-size: smaller;
+    font-weight: bold;
+    
+}
+.email-required{
+    font-size: smaller;
+    font-weight: bold;
+    color: red;
+    
+}
+
+
+#email{
+    width: 80%;
+    padding: 5%;
+    margin:2% auto;
+    border: 2px solid hsl(0, 8%, 77%);
+    border-radius: 8px;
+
+
+}
+#email:focus{
+    outline: 0;
+    border: 2px solid hsl(0, 2%, 24%);
+}
+/* to be assigned if email is wrong */
+.wrong{
+    background-color: hsla(7, 93%, 82%, 0.712);
+    border: 2px solid hsl(4, 100%, 67%);
+}
+
+
+.button{
+    padding: 5%;
+    width: 91%;
+    margin: 2% auto;
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 8px;
+    font-weight: bolder;
+}
+.button:hover{
+    background: linear-gradient(45deg,hsl(335, 78%, 55%),hsl(4, 100%, 67%));
+    cursor: pointer;
+    border: 2px solid hsl(4, 100%, 67%);
+}
+
+#image img{
+    /*the image was splling over to the side and this helped make sure it stays in line*/
+    max-width: 100%; 
+    max-height: 100%;
+    
+}
+
+.sides{
+    flex-grow: 1; /*how i made equal spacing on the sides as margins*/
+}
+
+
+
+.thanks{
+    background: white;
+    padding:2%;
+    border-radius: 4%;
+    align-items: center;
+    max-height: 90vh; /*made sure it always fit in the screen when minimized with height*/
+    overflow: hidden; /*to avoid image going out of the box when minimizing*/
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.thanks h1{
+    font-size: 3.5rem;
+    font-family: Roboto-Bold;
+    margin-bottom: 0;
+
+}
+#width{
+    padding: 3% 6%;
+}
+
+
+
+
+.hidden{
+    display: none;
+}
+
+@media  (max-width:500px){
+    .first-page{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: -0vh;
+        min-height: 70vh;
+    
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(25, 163, 69);
+        max-height: 90vh;
+        background-color: white;
+    }
+
+    #form{
+        padding: 0px;
+        margin: 0px;
+        max-width: 90%;
+    }
+    #form h1{
+        font-size: 3rem;
+        font-family: Roboto-Bold;
+        margin-bottom: 0;
+    }
+
+    #image{
+        display:none;
+    }
+    #side1{
+       
+        background-image: url("./illustration-sign-up-mobile.svg");
+        min-height: 30vh;
+        width:100vw;
+
+        
+
+    }
+    #side2{
+        display: none;
+        width:0px;
+        height: 0px;
+    }
+}
